@@ -1,0 +1,20 @@
+@startuml
+
+
+(*) --> "Router"
+"Router" --> Guard
+"Router" --> Resolver
+"Resolver" --> Facade
+"Facade" -.> DataAccess
+
+"DataAccess" -> Interceptor(s)
+"Interceptor(s)" -> "DataAccess"
+note top: "Generated Library/Module"
+"Resolver" -> Component(s)
+"Facade" -> Component(s)
+"Interceptor(s)" -.> Loading State Handling
+"Interceptor(s)" -.> Error Handling
+"Interceptor(s)" -.> Caching
+"Interceptor(s)" -> Server
+
+@enduml

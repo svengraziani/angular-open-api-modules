@@ -1,0 +1,22 @@
+{
+  "npmScope": "open-api-data-access",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*",
+    "tsconfig.base.json": "*"
+  },
+  "projects": {
+    "open-api-data-access": {
+      "tags": []
+    },
+    "undefined-e2e": {
+      "tags": []
+    }
+  }
+}

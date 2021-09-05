@@ -14,9 +14,6 @@
   "projects": {
     "open-api-data-access": {
       "tags": []
-    },
-    "undefined-e2e": {
-      "tags": []
     }
   }
 }

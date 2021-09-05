@@ -1,0 +1,16 @@
+{
+  "name": "petstore-data-access-generator",
+  "version": "0.0.1",
+  "description": "Generate DataAccess Module from a OpenAPI Specification using OpenAPI Generator",
+  "main": "index.js",
+  "scripts": {
+    "pregenerate": "node index.js",
+    "generate": "openapi-generator-cli generate",
+    "postgenerate": "cd ./artifacts/pet-store && npm install --legacy-peer-deps && npm run build"
+  },
+  "author": "Sven Graziani",
+  "license": "MIT",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.4.1"
+  }
+}

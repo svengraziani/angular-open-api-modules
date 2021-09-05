@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "5.2.0",
+    "generators": {
+      "pet-store": {
+        "generatorName": "typescript-angular",
+        "output": "#{cwd}/artifacts/pet-store",
+        "glob": "artifacts/specification.json",
+        "additionalProperties": {
+          "ngVersion": "12.2.0",
+          "npmName": "pet-store-data-access",
+          "supportES6": "true",
+          "npmVersion": "0.0.1",
+          "withInterfaces": true,
+          "useSingleRequestParameter": true
+        }
+      }
+    }
+  }
+}

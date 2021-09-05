@@ -39,6 +39,7 @@
     "@angular/router": "~12.2.0",
     "@nrwl/angular": "12.8.0",
     "@nrwl/workspace": "^12.8.0",
+    "pet-store-data-access": "file:packages/pet-store-data-access-0.0.1.tgz",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

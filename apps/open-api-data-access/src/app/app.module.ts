@@ -11,6 +11,13 @@ import {
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 
+import {
+  NoRequestFiltering,
+  RegistryLoadingInterceptorModule, REQUEST_FILTER,
+  REQUEST_ID_GENERATOR,
+  UrlFragmentIdGenerator
+} from '@anexia/registry-loading-interceptor';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -18,10 +25,14 @@ import {ReactiveFormsModule} from "@angular/forms";
     AppRoutingModule,
     HttpClientModule,
     PetStoreDataAccessModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RegistryLoadingInterceptorModule
+
   ],
   providers: [
-    {provide: BASE_PATH, useValue: 'https://petstore3.swagger.io/api/v3'}
+    {provide: BASE_PATH, useValue: 'https://petstore3.swagger.io/api/v3'},
+    {provide: REQUEST_ID_GENERATOR, useValue: new UrlFragmentIdGenerator() },
+    {provide: REQUEST_FILTER, useValue: new NoRequestFiltering()}
   ],
   bootstrap: [AppComponent],
 })

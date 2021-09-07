@@ -1,6 +1,7 @@
 # Talk: Pragmatic DataAccess with OpenAPI
 
 * [Presentation Slides](docs/pragmatic_data_access_open_api_slides.pdf)
+* [Video Presentation](https://www.youtube.com/watch?v=O0g0rWi_2Yk)
 
 ## Useful resources
 * [Open API/Swagger](https://swagger.io)

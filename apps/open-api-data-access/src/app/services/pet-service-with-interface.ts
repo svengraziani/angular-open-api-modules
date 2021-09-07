@@ -14,8 +14,14 @@ export interface UrlPrefix {
 const URL_PREFIX = new InjectionToken('urlHelper');
 const CACHE = new InjectionToken('cacheProvider');
 
+
+
+
+
+
 @Injectable({ providedIn: 'root' })
 export class PetService {
+
   public isLoading$: Observable<boolean>;
   private isLoadingState$: BehaviorSubject<boolean> =
     new BehaviorSubject<boolean>(false);
@@ -30,13 +36,13 @@ export class PetService {
   }
 
   public getPet$(petId: number): Observable<GetPetResponseDto> {
-    // <-- lots of logic is getting inside this method (error, logging, loading)
-    // let's add also some caching
+    // <-- lots of logic is getting inside this method (error, logging, loading, caching)
+
 
     const headers = new HttpHeaders(); // net block with auth
 
     const url = this.urlHelper.prefix('/pet' + `${petId}`);
-
+    // let's add also some caching
     if (this.cache.isCached(url)) {
       if (this.cache.isExpired(url) === false) {
         return this.cache.result(url);

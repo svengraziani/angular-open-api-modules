@@ -1,27 +1,13 @@
-# OpenApiDataAccess
+# Talk: Pragmatic DataAccess with OpenAPI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+* [Presentation Slides](docs/pragmatic_data_access_open_api_slides.pdf)
 
-## Development server
+## Useful resources
+* [Open API/Swagger](https://swagger.io)
+* [Open API Generator](https://github.com/OpenAPITools/openapi-generator)
+* [Angular Http Interceptor](https://angular.io/api/common/http/HttpInterceptor)
+* [Angular Http Context](https://angular.io/api/common/http/HttpContext)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Interceptor Packages:
+  * [@anexia/registry-loading-interceptor](https://www.npmjs.com/package/@anexia/registry-loading-interceptor)

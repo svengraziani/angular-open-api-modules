@@ -1,11 +1,14 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 
-import {Pet, PetService} from 'pet-store-data-access';
+
 import {Observable} from "rxjs";
 import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
 import {distinctUntilChanged, map, startWith, switchMap} from "rxjs/operators";
 
 export type PetStatus = 'available' | 'pending' | 'sold';
+
+
+import {Pet, PetService} from 'pet-store-data-access';
 
 @Component({
   selector: 'app-root',

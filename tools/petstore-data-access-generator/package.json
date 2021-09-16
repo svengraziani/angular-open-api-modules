@@ -6,7 +6,7 @@
   "scripts": {
     "pregenerate": "node index.js",
     "generate": "openapi-generator-cli generate",
-    "postgenerate": "cd ./artifacts/pet-store && npm install --legacy-peer-deps && npm run build"
+    "-postgenerate": "cd ./artifacts/pet-store && npm install --legacy-peer-deps"
   },
   "author": "Sven Graziani",
   "license": "MIT",

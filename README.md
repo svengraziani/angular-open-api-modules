@@ -2,7 +2,7 @@
 
 * [Presentation Slides](docs/pragmatic_data_access_open_api_slides.pdf)
 * [Recording of Presentation (German)](https://www.youtube.com/watch?v=O0g0rWi_2Yk)
-* [Recording Presentation (English)](https://www.youtube.com/watch?v=LFSyMM-Lj6o)
+* [Recording Presentation (English)](https://www.youtube.com/watch?v=RTBSVK4X8fY&t=3621s)
 
 ## Useful resources
 * [Open API/Swagger](https://swagger.io)
